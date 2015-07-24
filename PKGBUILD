@@ -44,8 +44,8 @@ md5sums=('a99375dd855de00635e9ac8e62b0f8e6'
          '77548d22ce35270383210556eb0ba9a5'
          '9a3c82da627b317ec79c37fd6afba569'
          '60bc3624123c183305677097bcd56212'
-         'd390e2505de7bca0e102686ce9ceadbe'
-         '1e2585d8e7f8440b895f4045300f4e5b')
+         'f619ad8fec41e0a7115ee579a0b38378'
+         '4ca5542bb744016684ad801f7f44bada')
          
 validpgpkeys=(
         '647F28654894E3BD457199BE38DBBDC86092693E' # Greg Kroah-Hartman
