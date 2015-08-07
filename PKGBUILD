@@ -3,13 +3,13 @@
 buildarch=20
 
 pkgbase=linux-grsec-raspberrypi
-pkgver=4.0.8
-pkgrel=3
+pkgver=4.1.4
+pkgrel=1
 
 _kernelname=${pkgbase#linux}
 _desc="Grsecurity hardened kernel for the Raspberry Pi"
 _grsecver=3.1
-_timestamp=201507111211
+_timestamp=201508032312
 _grsec_patch="grsecurity-$_grsecver-$pkgver-$_timestamp.patch"
 _bfqver=v7r8
 
@@ -25,27 +25,27 @@ source=(
         "https://grsecurity.net/test/${_grsec_patch}"
         "https://grsecurity.net/test/${_grsec_patch}.sig"
         "raspberrypi.patch"
-        "ftp://teambelgium.net/bfq/patches/4.0.0-v7r8/0001-block-cgroups-kconfig-build-bits-for-BFQ-v7r8-4.0.patch"
-        "ftp://teambelgium.net/bfq/patches/4.0.0-v7r8/0002-block-introduce-the-BFQ-v7r8-I-O-sched-for-4.0.patch"
-        "ftp://teambelgium.net/bfq/patches/4.0.0-v7r8/0003-block-bfq-add-Early-Queue-Merge-EQM-to-BFQ-v7r8-for-4.0.0.patch"
+        "ftp://teambelgium.net/bfq/patches/${pkgver%.*}.0-${_bfqver}/0001-block-cgroups-kconfig-build-bits-for-BFQ-${_bfqver}-${pkgver%.*}.patch"
+        "ftp://teambelgium.net/bfq/patches/${pkgver%.*}.0-${_bfqver}/0002-block-introduce-the-BFQ-${_bfqver}-I-O-sched-for-${pkgver%.*}.patch"
+        "ftp://teambelgium.net/bfq/patches/${pkgver%.*}.0-${_bfqver}/0003-block-bfq-add-Early-Queue-Merge-EQM-to-BFQ-${_bfqver}-for-${pkgver%.*}.0.patch"
         'config.txt'
         'cmdline.txt'
         'config.v6'
         'config.v7'
 )
         
-md5sums=('a99375dd855de00635e9ac8e62b0f8e6'
+md5sums=('32cb4dd9f14d37bf71bafa6ed368f769'
          'SKIP'
-         '9bbbb84511c15e524c95a0bf45bbb2e7'
+         '69b219654aa49ba6b1f8aba822d78e91'
          'SKIP'
-         'f1b01a0c48e48b10d84fc4c22884aeb7'
+         '8829cd57db777a45bd1e45370152586a'
          '9b221738c7872804b12d37cc28da662b'
          '41efdbed6fe578640408ac9dca034261'
          '77548d22ce35270383210556eb0ba9a5'
          '9a3c82da627b317ec79c37fd6afba569'
          '60bc3624123c183305677097bcd56212'
-         'f619ad8fec41e0a7115ee579a0b38378'
-         '4ca5542bb744016684ad801f7f44bada')
+         '0c6fdda9cbf03c993488a3ab473fad17'
+         '7c6ae234776e46cfa46ebc38580b45b9')
          
 validpgpkeys=(
         '647F28654894E3BD457199BE38DBBDC86092693E' # Greg Kroah-Hartman
