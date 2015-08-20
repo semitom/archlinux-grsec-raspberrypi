@@ -3,13 +3,13 @@
 buildarch=20
 
 pkgbase=linux-grsec-raspberrypi
-pkgver=4.1.5
-pkgrel=2
+pkgver=4.1.6
+pkgrel=1
 
 _kernelname=${pkgbase#linux}
 _desc="Grsecurity hardened kernel for the Raspberry Pi"
 _grsecver=3.1
-_timestamp=201508142233
+_timestamp=201508181953
 _grsec_patch="grsecurity-$_grsecver-$pkgver-$_timestamp.patch"
 _bfqver=v7r8
 
@@ -34,18 +34,18 @@ source=(
         'config.v7'
 )
         
-md5sums=('f23e1d4ce8f63e46db81d56e36281885'
+md5sums=('1dae0c808e34164cab3dfd57be88bd53'
          'SKIP'
-         '5d049f442af704b383f317e6dc083a49'
+         'de2f4d2b095b926a7755be69d99250ff'
          'SKIP'
-         '95695326b9f01ed0b63dcb3ccb88f70b'
+         'e60297547696a8fc35d77f997ec501f7'
          '74bf103542cbdee0363819309adb97a2'
          'f09baae3c7add4ed9bedde22ae3efe19'
          'bd8cc19a31d1cf8aeeaf9245057c4f9b'
          '9a3c82da627b317ec79c37fd6afba569'
          '60bc3624123c183305677097bcd56212'
-         '70d88b5995113d8275c51b81a863c648'
-         'dceb8cda5065a3cf93eca3f70d2ca31b')
+         '9fe1e710f9bdfaac8717fe119e6c0705'
+         '3e4c3db1cec043bb3898745ac4111193')
          
 validpgpkeys=(
         '647F28654894E3BD457199BE38DBBDC86092693E' # Greg Kroah-Hartman
