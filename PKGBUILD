@@ -4,7 +4,7 @@ buildarch=20
 
 pkgbase=linux-grsec-raspberrypi
 pkgver=4.1.6
-pkgrel=1
+pkgrel=2
 
 _kernelname=${pkgbase#linux}
 _desc="Grsecurity hardened kernel for the Raspberry Pi"
@@ -38,14 +38,14 @@ md5sums=('1dae0c808e34164cab3dfd57be88bd53'
          'SKIP'
          'de2f4d2b095b926a7755be69d99250ff'
          'SKIP'
-         'e60297547696a8fc35d77f997ec501f7'
+         'b37cca5a698e7dfe79741547222e1996'
          '74bf103542cbdee0363819309adb97a2'
          'f09baae3c7add4ed9bedde22ae3efe19'
          'bd8cc19a31d1cf8aeeaf9245057c4f9b'
          '9a3c82da627b317ec79c37fd6afba569'
          '60bc3624123c183305677097bcd56212'
-         '9fe1e710f9bdfaac8717fe119e6c0705'
-         '3e4c3db1cec043bb3898745ac4111193')
+         'b3f029671dca0c1fb5868304994d22dc'
+         'bb03a4bd7ac962dd502b8ae0d1ce455d')
          
 validpgpkeys=(
         '647F28654894E3BD457199BE38DBBDC86092693E' # Greg Kroah-Hartman
