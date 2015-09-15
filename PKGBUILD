@@ -3,13 +3,13 @@
 buildarch=20
 
 pkgbase=linux-grsec-raspberrypi
-pkgver=4.1.6
-pkgrel=5
+pkgver=4.1.7
+pkgrel=1
 
 _kernelname=${pkgbase#linux}
 _desc="Grsecurity hardened kernel for the Raspberry Pi"
 _grsecver=3.1
-_timestamp=201509112213
+_timestamp=201509131604
 _grsec_patch="grsecurity-$_grsecver-$pkgver-$_timestamp.patch"
 _bfqver=v7r8
 
@@ -34,11 +34,11 @@ source=(
         'config.v7'
 )
         
-md5sums=('1dae0c808e34164cab3dfd57be88bd53'
+md5sums=('e94aaf24b20aa8d148a271398cdafa40'
          'SKIP'
-         '7e4ab7e8fb3d2d03be91586acd326e22'
+         '1c48b783700acf764ce05c9a2e277c0d'
          'SKIP'
-         'c9ab0a775a7b1bb210a1935796df2683'
+         '1e4b2452fc2b49a888cf7f7df6f1820e'
          '74bf103542cbdee0363819309adb97a2'
          'f09baae3c7add4ed9bedde22ae3efe19'
          'bd8cc19a31d1cf8aeeaf9245057c4f9b'
